@@ -7,3 +7,7 @@ def index(request):
 	
 def upload(request):
 	return render(request, 'uploadulam/upload.html', {'upload':['Call me','09123456789']})
+
+def profile(request):
+	return render(request, 'uploadulam/profileulam.html')	
+
