@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>What's Your Ulam Pare</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'uploadulam/css/navbar.css' %}">
+	<link rel="stylesheet" href="{% static 'uploadulam/css/upload.css' %}">
+	<script src="{% static 'uploadulam/js/navbar.js' %}"></script>
+</head>
+
+<body>
+	<ul id="navbar">
+		<li class="active"><a href="/">Home</a></li>
+		<li><a href="/upload/">Upload</a></li>
+		<li><a href="/profile/">Profile</a></li>
+	</ul>
+	{% block content %}
+	{% endblock %}		
+</body>
+</html>
