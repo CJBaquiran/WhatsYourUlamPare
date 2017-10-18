@@ -1,23 +1,31 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 
 <head>
 	<title>What's Your Ulam Pare</title>
 	<meta charset="utf-8" />
-	{% load staticfiles %}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{% static 'uploadulam/css/navbar.css' %}">
 	<link rel="stylesheet" href="{% static 'uploadulam/css/upload.css' %}">
-	<link rel="stylesheet" href="{% static 'uploadulam/css/profileulam.css' %}">
-	<script src="{% static 'uploadulam/js/navbar.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'uploadulam/css/about.css' %}">
+	<link rel="stylesheet" href="{% static 'uploadulam/css/postbox.css' %}">
+	
 </head>
+
 
 <body>
 	<ul id="navbar">
 		<li class="active"><a href="/">Home</a></li>
 		<li><a href="/upload/">Upload</a></li>
-		<li><a href="/profile/">Profile</a></li>
+		<li><a href="/about/">About Me</a></li>
 	</ul>
 	{% block content %}
-	{% endblock %}		
+	{% endblock %}
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script src="{% static 'uploadulam/js/navbar.js' %}"></script>
+	<script src="{% static 'uploadulam/js/upload.js' %}"></script>
 </body>
+
+
 </html>

@@ -1,16 +1,6 @@
 html, body {
     height: 100%;
 }
-body {
-    margin: 0;
-    background-color: lightsteelblue;
-    background-image: url('http://hdw.datawallpaper.com/architecture/vintage-new-york-city-299988.jpg');
-    background-position: center;
-    background-size: cover;
-    -webkit-background-blend-mode: overlay;
-    -moz-background-blend-mode: overlay;
-    background-blend-mode: overlay;
-}
 
 #navbar {
     position: absolute;

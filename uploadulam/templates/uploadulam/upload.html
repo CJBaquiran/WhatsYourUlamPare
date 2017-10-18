@@ -1,11 +1,26 @@
 {% extends "uploadulam/header.html" %}
 
 {% block content %}
-	<body>
-	<div class="preview img-wrapper"></div>
-		<div class="file-upload-wrapper">
-			<input type="file" name="file" class="file-upload-native" accept="image/*" />
-			<input type="text" disabled placeholder="upload image" class="file-upload-text" />
-		</div>
-	</body>
+<!-- UPLOADFILE -->
+<div class="preview img-wrapper"></div>
+<div class="file-upload-wrapper">
+		<input type="file" name="file" class="file-upload-native" accept="image/*" />
+		<input type="text" disabled placeholder="upload image" class="file-upload-text" />
+</div> 
+
+<!-- POSTBOX -->
+<html class="no-js">
+  <body>
+    <div class="container">
+        <fieldset>
+            <form action="">
+              <input type="text" class="ghost-input" placeholder="Ulam Title" value="" required>
+              <textarea rows="5" type="text" class="ghost-input" placeholder="Ulam Description" value="" required></textarea>
+              <input type="submit" class="ghost-button">
+            </form>
+          </fieldset>
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
 {% endblock %}

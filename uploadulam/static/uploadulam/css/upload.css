@@ -30,15 +30,15 @@ body {
 		font-size: 20px;
 		line-height: 1.4;
 		color: rgba(255,255,255,0.8);
-		background: #1d1f20;
+		background: #4D8FAC;
 }
 
 .preview {
 		display: block;
 		width: 200px;
 		height: 200px;
-		margin: 20px auto;
-		box-shadow: 0px 0px 0px 2px rgba(33, 122, 105, 1);
+		margin: 100px auto;
+		box-shadow: 0px 0px 0px 2px rgba(44, 62, 80,1.0);
 		border-radius: 50%;
 		overflow: hidden;
 }
@@ -51,7 +51,7 @@ body {
 		height: 30px;
 		margin: 25px auto;
 		border-radius: 15px;
-		box-shadow: 0px 0px 2px 2px rgba(33, 122, 105, 1);
+		box-shadow: 0px 0px 2px 2px rgba(44, 62, 80,1.0);
 }
 
 .file-upload-native,
